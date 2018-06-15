@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="com.example.youssef.getyourdrug.LoginActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bgrect"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/create_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/create_account"
+            android:textColor="#ffffff"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/logo"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/wsdesignlogo"
+            android:layout_marginTop="50dp"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/sign_in"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/s_authentifier"
+            android:textColor="#ffffff"
+            android:textSize="19sp"
+            android:layout_above="@+id/terms"
+            android:padding="16dp"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/rect"
+            android:layout_marginBottom="35dp"
+            tools:ignore="UnknownId,UnknownIdInLayout" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="-05dp">
+
+            <EditText
+                android:id="@+id/email"
+                android:textColor="#fff"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:background="@drawable/rect1"
+                android:layout_marginTop="220dp"
+                android:hint="@string/prompt_email"
+                android:inputType="textEmailAddress"
+                android:textColorHint="#ffffff"
+                android:paddingLeft="20dp"
+                android:drawableLeft="@drawable/email"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:drawablePadding="16dp"
+                tools:ignore="RtlSymmetry,TextFields"
+                android:paddingStart="20dp"
+                android:drawableStart="@drawable/email" />
+
+            <EditText
+                android:id="@+id/password"
+                android:textColor="#fff"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:background="@drawable/rect1"
+                android:layout_marginTop="20dp"
+                android:hint="@string/prompt_password"
+                android:inputType="textPassword"
+                android:textColorHint="#ffffff"
+                android:drawableLeft="@drawable/pass"
+                android:paddingLeft="20dp"
+                android:drawablePadding="16dp"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:drawableStart="@drawable/pass"
+                android:paddingStart="20dp"
+                tools:ignore="RtlSymmetry,TextFields" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
